@@ -1,5 +1,7 @@
 function showPage(page) {
-    $('#navbarToggler').addClass('collapsed')
+    if (!$('#navbarToggler').hasClass('collapsed')) {
+        $('#navbarToggler').click();
+    }
     $('#homeLink').removeClass('active');
     $('#home2Link').removeClass('active');
     $('#summerLink').removeClass('active');
