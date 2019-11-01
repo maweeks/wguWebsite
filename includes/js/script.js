@@ -1,4 +1,5 @@
 function showPage(page) {
+    $('#navbarToggler').click()
     $('#homeLink').removeClass('active');
     $('#home2Link').removeClass('active');
     $('#summerLink').removeClass('active');
