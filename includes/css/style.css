@@ -70,14 +70,32 @@ body {
     background-color: #aca;
 }
 
-div.sideBySideImage {
-    padding: 0;
+.sideBySideRow {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-div.sideBySideImage>img {
+div.sideBySideImage {
+    padding: 0;
+    position: relative;
+}
+
+div.sideBySideImage img {
     max-height: 800px;
     min-height: 520px;
     min-width: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+div.sideBySideImage div {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(30, 30, 30, .7);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width:100%;
 }
