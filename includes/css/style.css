@@ -1,5 +1,5 @@
 .contactLink {
-    color: green;
+    color: lime;
     display: inline;
 }
 
@@ -36,10 +36,48 @@ span {
     margin: 10px;
 }
 
-#contacts {
-    background-color: #999;
+html, footer {
+    background-color: #333;
+}
+header {
+    background-color: rgb(248, 249, 250);
+}
+.orange-text {
+    color: orange;
 }
 
-#brands {
-    background-color: #333;
+#fullImage {
+    height: 50%;
+    max-height: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+
+div.fullImage {
+    max-width: 100%;
+    width: 100%;
+}
+
+div.fullImage>img {
+    max-height: 800px;
+    min-height: 520px;
+    min-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+body {
+    background-color: #aca;
+}
+
+div.sideBySideImage {
+    padding: 0;
+}
+
+div.sideBySideImage>img {
+    max-height: 800px;
+    min-height: 520px;
+    min-width: 100%;
+    object-fit: cover;
+    width: 100%;
 }

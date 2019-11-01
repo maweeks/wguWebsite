@@ -10,65 +10,204 @@
         <link href="./includes/css/external/bootstrap.min.css" rel="stylesheet">
         <link href="./includes/css/style.css" rel="stylesheet">
     </head>
-    <body class="container">
-        <header class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">
-                <img src="./includes/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./summer.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Summer</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./summerCoaching.html">Coaching</a>
-                            <a class="dropdown-item" href="./summerSales">Sales</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./winter.html">Winter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./About.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./events.html">Events</a>
-                    </li>
-                </ul>
+    <body>
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="./includes/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li id="homeLink" class="nav-item active">
+                                <a class="nav-link" href="javascript:showPage('home');">Home</a>
+                            </li>
+                            <li id="home2Link" class="nav-item">
+                                <a class="nav-link" href="javascript:showPage('home2');">Home 2</a>
+                            </li>
+                            <li id="summerLink" class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Summer</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a id="summerCoachingLink" class="dropdown-item" href="javascript:showPage('summerCoaching');">Coaching</a>
+                                    <a id="summerSalesLink" class="dropdown-item" href="javascript:showPage('summerSales');">Sales</a>
+                                </div>
+                            </li>
+                            <li id="winterLink" class="nav-item">
+                                <a class="nav-link" href="javascript:showPage('winter');">Winter</a>
+                            </li>
+                            <li id="aboutLink" class="nav-item">
+                                <a class="nav-link" href="javascript:showPage('about');">About</a>
+                            </li>
+                            <li id="eventsLink" class="nav-item">
+                                <a class="nav-link" href="javascript:showPage('events');">Events</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </header>
 
-        <div class="row status">
-            <div class="col-12">
-                <h2 id="status">Game result will appear here</h2>
+        <div id="home" class="fullImage">
+            <img src="./includes/images/ride_jump2.jpg">
+        </div>
+
+        <div id="home2" class="d-none">
+                <div class="">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6 sideBySideImage">
+                            <img src="./includes/images/ride_jump2.jpg">
+                        </div>
+                        <div class="col-lg-6 col-sm-6 sideBySideImage">
+                            <img src="./includes/images/brand_tents.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div id="summer" class="d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Summer</h1>
+                        <h2>I like summer!</h2>
+- Side by side pics; one of riding/coaching, one of demo/rep show set-up (once have a summer show pic)
+- Clicking each link goes to the relevant page
+                    </div>
+                </div>
             </div>
         </div>
-        <footer class="row">
-            <div class="col-12">
-                <ul id="contacts" class="flex-box">
-                    <li class="flex-item"><span class="orange-text">email</span><span class="white-text"><a class="contactLink" href="mailto:daveweeks@hotmail.co.uk">daveweeks@hotmail.co.uk</a></span></li>
-                    <li class="flex-item"><span class="orange-text">facebook</span><span class="white-text"><a class="contactLink" href="https://facebook.com/" target="_blank">Dave</a></span></li>
-                    <li class="flex-item"><span class="orange-text">instagram</span><span class="white-text"><a class="contactLink" href="https://www.instagram.com/weeksey44/" target="_blank">@weeksey44</a></span></li>
-                </ul>
-                <ul id="brands" class="flex-box">
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/chromag.jpeg"></li>
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/dtSwiss.jpeg"></li>
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/dynastar.jpeg"></li>
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/FiveTen.jpeg"></li>
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/lange.jpeg"></li>
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/look.jpeg"></li>
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/MarzocchiFox.jpeg"></li>
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/Maxxis.jpeg"></li>
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/Onyx.jpeg"></li>
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/Shimano.jpeg"></li>
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/sweet.jpeg"></li>
-                        <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/ZEP.jpeg"></li>
-                    </ul>
+
+        <div id="summerCoaching" class="d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Coaching</h1>
+                        <h2>I teach stuff!</h2>
+- ZEP Racing details + link to website
+- Working for ZEP since 2018
+- Primarily running the ZEP Grom Freeracers Team
+- Jr development team aimed on having fun, with allowing kids to race whenever desired.  Focusing on keeping the program relaxed so kids don’t get burnt out too early.  Mixed program riding multiple disciplines; bike park, trails, pumptrack, djs etc
+- SGC details + link to website
+- Working for SGC since 2015
+- Working both kids and adult camps
+- PMBI details + link to website
+- Working as a Level 1 Course Conductor since 2018
+- Conducting training courses for prospective bike instructors/guides.
+- Private lesson details
+- Lessons available on request (schedule depending) through ZEP Techniques
+- Supported by; *frame brand*, Marzocchi/Fox, Shimano, Chromag, DTSwiss, Maxxis, FiveTen, Evoc (all logos link to brand website).
+- Qualifications
+- PMBIA Level 3
+- IDP Level 2 Tech and Level 2 Air
+- OFA Level 3
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="summerSales" class="d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Sales</h1>
+                        <h2>I sell stuff!</h2>
+- Sweet protection details + link to website
+- Live To Play Another Day
+- Protection and Apparal brand, from Trysil Norway
+- Everything from Road/Gravel to Enduro Racing
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="winter" class="d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Winter</h1>
+                        <h2>I do winter things too!</h2>
+- Description of services
+- Working as an assistant sales rep for Brad Richardson, covering the following brands within BC,
+- Sweet Protection details + link to website
+- Live To Play Another Day
+- Protection and Apparal brand, from Trysil Norway
+- Playing in Alpine, Touring and Racing
+- Dynastar details + link to website
+- #WeLiveSkiing
+- Race/Alpine/Touring/Freeride
+- Lange details + link to website
+- #BeOneWithYourGoal
+- Racing/Touring/Alpine/Freeride Ski Boots
+- Look details + link to website
+- #TrustLook
+- Race/Alpine/Freeride bindings
+- BavarianAlpineManifest?
+- Touring bindings
+- New to market for winter 19/20
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>About</h1>
+                        <h2>I'm Dave, and I ride bikes!</h2>
+- My bio (profile pic); summer and winter
+- From rider resume to start
+- Auto updating last few images from WGU insta
+- Link to FB page, WGU insta, ZEP racing insta
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="events" class="d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Events</h1>
+                        <h2>Dealer demos</h2>
+                        <em>More events coming soon...</em>
+                        <h2>Public demos</h2>
+                        <em>More events coming soon...</em>
+                        <h2>Other</h2>
+                        <em>More events coming soon...</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul id="contacts" class="flex-box">
+                            <li class="flex-item"><span class="orange-text">email</span><span class="white-text"><a class="contactLink" href="mailto:daveweeks@hotmail.co.uk">daveweeks@hotmail.co.uk</a></span></li>
+                            <li class="flex-item"><span class="orange-text">facebook</span><span class="white-text"><a class="contactLink" href="https://facebook.com/" target="_blank">Dave</a></span></li>
+                            <li class="flex-item"><span class="orange-text">instagram</span><span class="white-text"><a class="contactLink" href="https://www.instagram.com/weeksey44/" target="_blank">@weeksey44</a></span></li>
+                        </ul>
+                        <ul id="brands" class="flex-box">
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/chromag.jpeg"></li>
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/dtSwiss.jpeg"></li>
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/dynastar.jpeg"></li>
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/FiveTen.jpeg"></li>
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/lange.jpeg"></li>
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/look.jpeg"></li>
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/MarzocchiFox.jpeg"></li>
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/Maxxis.jpeg"></li>
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/Onyx.jpeg"></li>
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/Shimano.jpeg"></li>
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/sweet.jpeg"></li>
+                            <li class="flex-item"><img class="sponsorLogo" src="./includes/images/brands/ZEP.jpeg"></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </footer>
     </body>
